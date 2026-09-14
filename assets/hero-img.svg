@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" fill="none">
+<circle cx="420" cy="250" r="150" fill="#D85A2B" opacity=".45"/>
+<rect x="210" y="80" width="350" height="270" rx="16" fill="#5B00F5"/>
+<rect x="210" y="80" width="350" height="42" rx="16" fill="#241091"/>
+<circle cx="235" cy="101" r="7" fill="#6F42E9"/><circle cx="257" cy="101" r="7" fill="#6F42E9"/><circle cx="279" cy="101" r="7" fill="#6F42E9"/>
+<rect x="228" y="145" width="45" height="12" rx="6" fill="#00E0D0"/>
+<rect x="430" y="150" width="28" height="5" rx="2.5" fill="#DDD7FF"/><rect x="470" y="150" width="28" height="5" rx="2.5" fill="#DDD7FF"/><rect x="510" y="150" width="28" height="5" rx="2.5" fill="#DDD7FF"/>
+<rect x="230" y="178" width="150" height="125" rx="12" fill="#3C0AAB"/>
+<rect x="400" y="178" width="135" height="125" rx="12" fill="#3C0AAB"/>
+<circle cx="468" cy="241" r="28" fill="#11BFEA"/><path d="M460 226l23 15-23 15z" fill="white"/>
+<rect x="95" y="190" width="95" height="130" rx="28" fill="#FF7414"/>
+<circle cx="140" cy="162" r="28" fill="#F6C8B3"/>
+<path d="M115 159c7-27 47-32 56 2-10-4-18-10-24-19-7 13-18 18-32 17z" fill="#2B135E"/>
+<path d="M112 220c-22 10-32 25-42 47l17 9 31-28 2 73h40l-2-75 25 34 19-8-39-58z" fill="#F3D0B8"/>
+<path d="M114 320h43l-5 82h-39z" fill="#19D5B4"/><path d="M108 401l-22 46 15 7 36-53z" fill="#F6C8B3"/><path d="M154 401l18 45 15-3-10-44z" fill="#F6C8B3"/>
+<rect x="140" y="236" width="70" height="45" rx="8" transform="rotate(27 140 236)" fill="#FF5F7C"/><rect x="153" y="244" width="43" height="28" rx="5" transform="rotate(27 153 244)" fill="#FF8BA0"/><path d="M173 255l10 6-10 6z" fill="white"/>
+<path d="M490 350c22 5 35 14 44 33l-19 7-26-19-3 54h-42l3-55-20 23-17-10 32-43z" fill="#08D6B0"/><circle cx="479" cy="333" r="26" fill="#F6C8B3"/><path d="M454 331c4-26 42-34 53-4-14 3-24-1-31-12-5 8-12 13-22 16z" fill="#2B135E"/><path d="M445 379l-6 69h36l4-67z" fill="#241091"/><path d="M481 380l18 69h36l-21-75z" fill="#241091"/><rect x="418" y="287" width="52" height="38" rx="8" transform="rotate(-24 418 287)" fill="#FFC52D"/><path d="M429 304l20-7M432 314l17-6" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>
