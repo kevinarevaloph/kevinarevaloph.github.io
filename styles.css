@@ -127,7 +127,7 @@ a {
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
 
@@ -143,7 +143,7 @@ a {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity .2s ease, visibility .2s ease;
+  transition: opacity .25s ease, visibility .25s ease;
 }
 
 
