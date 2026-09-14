@@ -111,11 +111,17 @@ a {
    ========================================================= */
 
 .brand {
+  display: flex;
+  align-items: center;
   margin-right: auto;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.2px;
+}
+
+.brand img {
+  width: 55px;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 
