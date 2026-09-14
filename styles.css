@@ -357,10 +357,11 @@ h3 {
 
 .service-card img {
   display: block;
-  width: 55px;
-  height: 55px;
-  margin: 0 auto 20px;
-  object-fit: contain;
+  margin: 0 auto 20px auto;
+  width: 30%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 3px;
 }
 
 .service-card p {
