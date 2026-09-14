@@ -72,13 +72,14 @@ a {
    5. HEADER / NAVIGATION
    ============================== */
 
-.site-header{
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  z-index:10;
-  color:#fff;
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  color: #fff;
+  background: var(--orange);
 }
 
 .nav{
@@ -355,7 +356,9 @@ h3 {
 }
 
 .service-card img {
-  width: 100%;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 30%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 3px;
@@ -556,7 +559,7 @@ h3 {
   }
 
   .site-header {
-    position: absolute;
+    position: fixed;
   }
 
   .brand {
