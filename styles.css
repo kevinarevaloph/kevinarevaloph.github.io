@@ -110,80 +110,74 @@ a {
   letter-spacing:.2px;
 }
 
-
 /* ==============================
    PROJECTS DROPDOWN
    ============================== */
 
-.nav-dropdown{
-  position:relative;
+.nav-dropdown {
+  position: relative;
 }
 
-.nav-dropdown-toggle{
-  display:block;
+.nav-dropdown-toggle {
+  display: block;
 }
 
 
-/* Dropdown container */
+/* Dropdown box */
 
-.dropdown-menu{
-  position:absolute;
-  top:100%;
-  left:50%;
-  transform:translateX(-50%) translateY(10px);
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
 
-  width:210px;
-  padding:10px 0;
+  width: 210px;
+  padding: 8px 0;
 
-  background:#fff;
-  border-radius:6px;
+  background: #fff;
+  border-radius: 6px;
 
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
 
-  opacity:0;
-  visibility:hidden;
-  pointer-events:none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 
-  transition:
-    opacity .2s ease,
-    transform .2s ease,
-    visibility .2s ease;
+  transition: opacity .2s ease, visibility .2s ease;
 }
 
 
 /* Dropdown links */
 
-.dropdown-menu a{
-  display:block;
-  padding:11px 18px;
+.dropdown-menu a {
+  display: block;
+  padding: 11px 18px;
 
-  color:#172033;
-  font-size:14px;
-  font-weight:500;
+  color: #172033;
+  font-size: 14px;
+  font-weight: 500;
 
-  text-decoration:none;
-  opacity:1;
+  text-decoration: none;
+  opacity: 1;
 }
 
 
-/* Hover effect on dropdown links */
+/* Dropdown link hover */
 
-.dropdown-menu a:hover{
-  background:#f8fafc;
-  color:#f97316;
-  text-decoration:none;
+.dropdown-menu a:hover {
+  background: #f8fafc;
+  color: #f97316;
+  text-decoration: none;
 }
 
 
-/* Show dropdown when Projects is hovered */
+/* Show dropdown */
 
-.nav-dropdown:hover .dropdown-menu{
-  opacity:1;
-  visibility:visible;
-  pointer-events:auto;
-  transform:translateX(-50%) translateY(0);
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
-
 /* =========================================================
    6. BRAND / LOGO
    ========================================================= */
