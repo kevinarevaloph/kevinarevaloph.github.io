@@ -1,1 +1,633 @@
+/* =========================================================
+   1. FONTS
+   ========================================================= */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+/* =========================================================
+   2. GLOBAL VARIABLES
+   ========================================================= */
+
+:root {
+  --orange: #f97316;
+  --orange-dark: #ea580c;
+
+  --navy: #172033;
+
+  --soft: #f8fafc;
+
+  --lav: #f2f0fe;
+
+  --purple: #5200d9;
+  --purple2: #c10fff;
+
+  --yellow: #ffcd57;
+
+  --max: 1200px;
+}
+
+
+/* =========================================================
+   3. GLOBAL / RESET STYLES
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins, Arial, sans-serif;
+  color: var(--navy);
+  background: #fff;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================================
+   4. CONTAINER
+   ========================================================= */
+
+.container {
+  width: min(var(--max), calc(100% - 48px));
+  margin: auto;
+}
+
+
+/* ==============================
+   5. HEADER / NAVIGATION
+   ============================== */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  color: #fff;
+  background: var(--orange);
+}
+
+.nav{
+  height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:30px;
+}
+
+.nav a{
+  text-decoration:none;
+  font-weight:500;
+  font-size:15px;
+  opacity:.95;
+}
+
+.nav a:hover{
+  opacity:1;
+  text-decoration:underline;
+  text-underline-offset:5px;
+}
+
+.brand{
+  margin-right:auto;
+  text-decoration:none;
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.2px;
+}
+
+/* ==============================
+   PROJECTS DROPDOWN
+   ============================== */
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  display: block;
+}
+
+
+/* Dropdown box */
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 210px;
+  padding: 8px 0;
+
+  background: #fff;
+  border-radius: 6px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu a {
+  display: block;
+  padding: 11px 18px;
+
+  color: #172033;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-decoration: none;
+  opacity: 1;
+}
+
+
+/* Dropdown link hover */
+
+.dropdown-menu a:hover {
+  background: #f8fafc;
+  color: #f97316;
+  text-decoration: none;
+}
+
+
+/* Show dropdown */
+
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/* =========================================================
+   6. BRAND / LOGO
+   ========================================================= */
+
+.brand {
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+
+/* =========================================================
+   7. SOCIAL MEDIA ICONS
+   ========================================================= */
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-left: 3px;
+}
+
+.socials img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+
+/* =========================================================
+   8. HERO SECTION
+   ========================================================= */
+
+.hero {
+  min-height: 650px;
+  background: linear-gradient(
+    135deg,
+    var(--orange),
+    var(--orange-dark)
+  );
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 110px 0 55px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  font-size: 16px;
+  max-width: 530px;
+  margin: 0 0 26px;
+}
+
+
+/* =========================================================
+   9. BUTTONS
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--yellow);
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.97);
+}
+
+.btn.purple {
+  background: #fff;
+  color: #3d0ca9;
+}
+
+
+/* =========================================================
+   10. HERO IMAGE / ART
+   ========================================================= */
+
+.hero-art {
+  width: min(100%, 590px);
+  margin-left: auto;
+}
+
+
+/* =========================================================
+   11. OFFER / FEATURES SECTION
+   ========================================================= */
+
+.offer {
+  background: var(--soft);
+  padding: 48px 0 10px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.offer-card {
+  padding: 18px 0 24px;
+}
+
+.offer-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   12. GENERAL SECTION STYLES
+   ========================================================= */
+
+.section {
+  padding: 120px 0;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  margin: 0 0 35px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 14px 0 8px;
+}
+
+
+/* =========================================================
+   13. ICONS
+   ========================================================= */
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 14px;
+}
+
+
+/* =========================================================
+   14. SERVICES SECTION
+   ========================================================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.service-card img {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 30%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.service-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   15. ABOUT SECTION
+   ========================================================= */
+
+.about {
+  background: var(--soft);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-copy p {
+  color: #6b7280;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+/* =========================================================
+   16. MY OBJECTIVE
+   ========================================================= */
+
+.objective {
+  background: #f2f0fe;
+  text-align: center;
+  padding: 85px 0;
+}
+
+.objective .container {
+  max-width: 800px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 28px;
+}
+
+.quote {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #172033;
+  margin: 0 0 20px;
+}
+
+.kevin {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   17. WHY CHOOSE ME SECTION
+   ========================================================= */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin-top: 60px;
+}
+
+.why-card .icon {
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   18. CONTACT SECTION
+   ========================================================= */
+
+.contact {
+  background: linear-gradient(
+    35deg,
+    #060097 0%,
+    #8204ff 64%,
+    #c10fff 98%
+  );
+  color: #fff;
+  text-align: center;
+  padding: 104px 0;
+}
+
+.contact h2 {
+  color: #fff;
+  max-width: 760px;
+  margin: 0 auto 45px;
+}
+
+
+/* =========================================================
+   19. FOOTER
+   ========================================================= */
+
+.footer {
+  padding: 30px 0;
+  background: #101827;
+  color: #cbd5e1;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   20. MOBILE MENU BUTTON
+   ========================================================= */
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 28px;
+}
+
+
+/* =========================================================
+   21. TABLET RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .nav {
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 13px;
+  }
+
+  .hero-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    padding-top: 125px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero-art {
+    margin: 0 auto;
+  }
+
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* =========================================================
+   22. MOBILE RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .container {
+    width: min(var(--max), calc(100% - 32px));
+  }
+
+  .site-header {
+    position: fixed;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .nav {
+    height: 75px;
+    gap: 10px;
+  }
+
+  .nav a {
+    display: none;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .nav.open {
+    background: rgba(23, 32, 51, 0.96);
+    height: auto;
+    padding: 18px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav.open a {
+    display: block;
+  }
+
+  .nav.open .mobile-toggle {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+  }
+
+  .hero-grid {
+    padding: 105px 0 50px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .offer-grid,
+  .services-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .about-grid {
+    gap: 35px;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+  }
+}
