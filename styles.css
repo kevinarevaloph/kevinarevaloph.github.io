@@ -16,7 +16,19 @@ a{color:inherit}
 .nav a{text-decoration:none;font-weight:500;font-size:15px;opacity:.95}
 .nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px}
 .brand{margin-right:auto;text-decoration:none;font-weight:700;font-size:18px;letter-spacing:.2px}
-.socials{display:flex;gap:15px;margin-left:3px}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-left: 3px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
 .socials a{font-size:20px}
 .hero{min-height:650px;background:linear-gradient(135deg,var(--orange),var(--orange-dark));color:#fff;display:flex;align-items:center}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:110px 0 55px}
