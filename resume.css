@@ -1,0 +1,547 @@
+/* =========================================================
+   RESUME PAGE
+   Page-specific styles
+   ========================================================= */
+
+
+/* =========================================================
+   1. RESUME HERO
+   ========================================================= */
+
+.resume-hero {
+  padding: 180px 0 100px;
+
+  background: linear-gradient(
+    135deg,
+    var(--orange),
+    var(--orange-dark)
+  );
+
+  color: var(--white);
+}
+
+.resume-hero-content {
+  max-width: 900px;
+}
+
+.resume-label {
+  margin: 0 0 14px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.resume-hero h1 {
+  margin: 0 0 10px;
+
+  font-size: clamp(48px, 7vw, 78px);
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.resume-title {
+  margin: 0 0 25px;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.resume-hero-text {
+  max-width: 760px;
+
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px 30px;
+
+  margin-top: 28px;
+
+  font-size: 14px;
+}
+
+.resume-download {
+  margin-top: 32px;
+
+  display: inline-block;
+
+  background: var(--white);
+  color: var(--purple);
+}
+
+.resume-download:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+
+
+/* =========================================================
+   2. GENERAL RESUME SECTIONS
+   ========================================================= */
+
+.resume-section {
+  padding: 100px 0;
+
+  background: var(--white);
+}
+
+.resume-section-light {
+  background: var(--soft);
+}
+
+.resume-section-heading {
+  max-width: 760px;
+
+  margin-bottom: 50px;
+}
+
+.resume-section-heading .section-label {
+  margin: 0 0 14px;
+
+  color: var(--orange);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.resume-section-heading h2 {
+  margin: 0;
+}
+
+
+/* =========================================================
+   3. PROFESSIONAL SUMMARY
+   ========================================================= */
+
+.resume-summary {
+  max-width: 900px;
+}
+
+.resume-summary p {
+  margin: 0 0 22px;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.resume-summary p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   4. CORE SKILLS
+   ========================================================= */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.skills-list span {
+  display: inline-block;
+
+  padding: 10px 17px;
+
+  background: var(--white);
+
+  border: 1px solid #e5e7eb;
+  border-radius: 30px;
+
+  color: var(--navy);
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   5. PROFESSIONAL EXPERIENCE
+   ========================================================= */
+
+.experience-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 60px;
+}
+
+.experience-item {
+  padding-bottom: 55px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 18px;
+}
+
+.experience-header h3 {
+  margin: 0 0 7px;
+
+  font-size: 24px;
+}
+
+.company-name {
+  margin: 0;
+
+  color: var(--orange);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.experience-date {
+  flex-shrink: 0;
+
+  padding-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.experience-tools {
+  margin-bottom: 24px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.experience-tools strong {
+  color: var(--navy);
+}
+
+.experience-item ul {
+  margin: 0;
+
+  padding-left: 22px;
+}
+
+.experience-item li {
+  margin-bottom: 12px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.experience-item li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   6. TECHNICAL SKILLS
+   ========================================================= */
+
+.technical-skills {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1px;
+
+  background: #dcd8f3;
+
+  border: 1px solid #dcd8f3;
+}
+
+.technical-skill {
+  min-height: 170px;
+
+  padding: 30px;
+
+  background: var(--white);
+}
+
+.technical-skill h3 {
+  margin: 0 0 15px;
+
+  font-size: 19px;
+}
+
+.technical-skill p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   7. CERTIFICATIONS
+   ========================================================= */
+
+.certifications-list {
+  max-width: 900px;
+}
+
+.certification-item {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 15px;
+
+  padding: 17px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.certification-item:first-child {
+  padding-top: 0;
+}
+
+.certification-item:last-child {
+  border-bottom: 0;
+}
+
+.certification-dot {
+  width: 8px;
+  height: 8px;
+
+  flex-shrink: 0;
+
+  margin-top: 8px;
+
+  background: var(--orange);
+
+  border-radius: 50%;
+}
+
+.certification-item p {
+  margin: 0;
+
+  color: var(--navy);
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   8. EDUCATION
+   ========================================================= */
+
+.education-card {
+  max-width: 800px;
+
+  padding: 30px;
+
+  background: var(--white);
+
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid var(--orange);
+
+  border-radius: 8px;
+}
+
+.education-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 21px;
+}
+
+.education-school {
+  margin: 0 0 6px;
+
+  color: var(--orange);
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.education-date {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   9. RESUME CTA
+   ========================================================= */
+
+.resume-cta {
+  padding: 100px 0;
+
+  background: var(--lav);
+
+  text-align: center;
+}
+
+.resume-cta-content {
+  max-width: 700px;
+
+  margin: 0 auto;
+}
+
+.resume-cta .section-label {
+  margin-bottom: 14px;
+
+  color: var(--orange);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.resume-cta h2 {
+  margin-bottom: 18px;
+}
+
+.resume-cta p {
+  margin: 0 auto 30px;
+
+  max-width: 600px;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   10. ACCESSIBILITY
+   ========================================================= */
+
+.resume-download:focus-visible {
+  outline: 2px solid var(--navy);
+
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   11. TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .technical-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-header {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .experience-date {
+    padding-top: 0;
+  }
+
+}
+
+
+/* =========================================================
+   12. MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .resume-hero {
+    padding: 125px 0 75px;
+  }
+
+  .resume-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .resume-title {
+    font-size: 20px;
+  }
+
+  .resume-hero-text {
+    font-size: 16px;
+  }
+
+  .resume-contact {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .resume-section {
+    padding: 75px 0;
+  }
+
+  .resume-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .experience-list {
+    gap: 45px;
+  }
+
+  .experience-item {
+    padding-bottom: 40px;
+  }
+
+  .experience-header h3 {
+    font-size: 21px;
+  }
+
+  .technical-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-skill {
+    min-height: auto;
+
+    padding: 25px;
+  }
+
+  .education-card {
+    padding: 25px;
+  }
+
+  .resume-cta {
+    padding: 75px 0;
+  }
+
+}
