@@ -1,1524 +1,563 @@
-/* =========================================================
-   1. FONTS
-   ========================================================= */
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B9ND5P4EDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B9ND5P4EDS');
+</script>
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-
-/* =========================================================
-   2. GLOBAL VARIABLES
-   ========================================================= */
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Kevin Arevalo | Digital Marketing Specialist</title>
+  <meta name="description" content="Kevin Arevalo is a Digital Marketing Specialist providing SEO, content marketing, social media, email marketing, lead generation, graphic design, and LinkedIn advertising support.">
+
+<link rel="icon" type="image/png" href="assets/favicon-o.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary navigation">
+       <a class="brand" href="index.html" aria-label="Kevin Arevalo">
+        <img src="assets/favicon-w.png" alt="Kevin Arevalo">
+      </a>
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="blog.html">Blog</a>
+
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle">Projects</a>
+
+        <div class="dropdown-menu">
+          <a href="blackpoint-it.html">BlackPoint IT</a>
+          <a href="digital-dealer.html">Digital Dealer</a>
+<!-- Temporarily Hidden
+          <a href="modern-day-marine.html">Modern Day Marine</a>
+-->
+        </div>
+      </div>
+
+	  <a href="resume.html">Resume</a>
+
+<div class="socials" aria-label="Social links">
+  <a href="https://www.linkedin.com/in/kevin-arevalo-44ba21239/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <img src="assets/LinkedIn_Icon.svg" alt="">
+  </a>
+</div>
+
+      <button
+        class="mobile-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+        ☰
+      </button>
+
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div>
+      <h1>Kevin Arevalo</h1>
+      <p>I help businesses build their online presence through practical digital marketing, content, and lead generation.</p>
+
+<a
+  class="btn purple"
+  href="mailto:kevinarevalofreelanceph@gmail.com?subject=I%20would%20like%20to%20know%20more%20about%20your%20services&body=Hi%20Kevin%2C%0A%0AI%20am%20interested%20in%20your%20services.%20Can%20you%20please%20get%20back%20to%20me,%20and%20let%27s%20talk%20about%20it.%0A%0AThank%20you%21"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Work with me
+</a>
+
+
+      </div>
+
+      <img
+        class="hero-art"
+        src="assets/business-growth.svg"
+        alt="Digital marketing illustration">
+
+    </div>
+  </section>
+
 
-:root {
-  --orange: #f97316;
-  --orange-dark: #ea580c;
+  <!-- WHAT I OFFER -->
+  <section class="offer" aria-labelledby="offer-title">
+    <div class="container">
+
+      <h2 id="offer-title">What I Offer</h2>
+
+      <div class="offer-grid">
+
+        <article class="offer-card">
+          <img class="icon" src="assets/building.svg" alt="">
+          <h3>Digital Marketing</h3>
+          <p>
+            I help businesses build their online presence through content,
+            social media, email marketing, SEO, and digital campaigns.
+          </p>
+        </article>
+
+        <article class="offer-card">
+          <img class="icon" src="assets/shopping-bag.svg" alt="">
+          <h3>Website Management</h3>
+          <p>
+            I manage and update WordPress websites, create website content,
+            and make basic HTML/CSS edits to keep pages clear, accurate,
+            and user-friendly.
+          </p>
+        </article>
+
+        <article class="offer-card">
+          <img class="icon" src="assets/blog.svg" alt="">
+          <h3>SEO &amp; Content</h3>
+          <p>
+            I create SEO-friendly website content and blog posts designed
+            to improve search visibility, provide value to readers, and
+            support business goals.
+          </p>
+        </article>
+
+        <article class="offer-card">
+          <img class="icon" src="assets/portfolio.svg" alt="">
+          <h3>Lead Generation</h3>
+          <p>
+            I support lead generation through research, prospecting,
+            email campaigns, LinkedIn marketing, and lead management
+            to help businesses reach the right audience.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES SECTION -->
+  <section class="section" id="services">
+    <div class="container">
+
+      <h2>My Services</h2>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <img src="assets/seo-content-marketing.svg" alt="">
+          <h3>SEO &amp; Content Marketing</h3>
+          <p>
+            I create SEO-friendly website and blog content that helps
+            businesses improve their online visibility and connect
+            with the right audience.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/social-media-marketing.svg" alt="">
+          <h3>Social Media Marketing</h3>
+          <p>
+            I create and manage social media content that keeps brands
+            active, consistent, and connected with their audience.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/email-lead-generation.svg" alt="">
+          <h3>Email &amp; Lead Generation</h3>
+          <p>
+            I support email campaigns and lead generation through audience
+            research, prospecting, campaign management, and lead nurturing.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/graphic-design.svg" alt="">
+          <h3>Graphic Design</h3>
+          <p>
+            I create marketing graphics for social media, email campaigns,
+            websites, brochures, and other promotional materials using
+            tools like Canva, Photoshop, Illustrator, and Figma.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/linkedin-ppc-advertising.svg" alt="">
+          <h3>LinkedIn PPC Advertising</h3>
+          <p>
+            I help businesses reach the right B2B audience through LinkedIn
+            paid advertising, including audience targeting, ad setup,
+            campaign management, and performance tracking.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <img src="assets/marketing-research.svg" alt="">
+          <h3>Marketing Research</h3>
+          <p>
+            I research companies, industries, and potential customers
+            to help businesses find the right prospects and make informed
+            marketing decisions.
+          </p>
+        </article>
 
-  --navy: #172033;
+      </div>
+    </div>
+  </section>
 
-  --soft: #f8fafc;
-  --lav: #f2f0fe;
 
-  --purple: #5200d9;
-  --purple2: #c10fff;
-
-  --yellow: #ffcd57;
-
-  --white: #ffffff;
-  --muted: #6b7280;
+<!-- =========================================================
+     CERTIFICATES SECTION
+     ========================================================= -->
 
-  --max: 1200px;
-}
-
+<section class="certificates-section" id="certificates">
 
-/* =========================================================
-   3. GLOBAL / RESET STYLES
-   ========================================================= */
+  <div class="container">
 
-* {
-  box-sizing: border-box;
-}
+    <div class="section-heading centered">
 
-html {
-  scroll-behavior: smooth;
-}
+      <p class="section-label">
+        Certifications
+      </p>
 
-body {
-  margin: 0;
-  font-family: Poppins, Arial, sans-serif;
-  color: var(--navy);
-  background: var(--white);
-  line-height: 1.7;
-}
+      <h2>
+        Professional Certificates
+      </h2>
 
-img {
-  max-width: 100%;
-  display: block;
-}
+      <p>
+        A collection of professional certifications and training
+        that support my skills and experience in digital marketing.
+      </p>
 
-a {
-  color: inherit;
-}
+    </div>
 
 
-/* =========================================================
-   4. CONTAINER
-   ========================================================= */
+    <div class="certificates-grid">
 
-.container {
-  width: min(var(--max), calc(100% - 48px));
-  margin: auto;
-}
 
+      <!-- Certificate 1 -->
 
-/* =========================================================
-   5. HEADER / NAVIGATION
-   ========================================================= */
+      <article class="certificate-card">
 
-.site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  color: var(--white);
-  background: var(--orange);
-}
+        <div class="certificate-image">
 
-.nav {
-  height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 30px;
-}
+          <img
+            src="assets/certificates/cor-cert-li-ppc-ads.png"
+            alt="LinkedIn Ads Course: Master B2B Lead Generation"
+          >
 
-.nav a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  opacity: 0.95;
-}
+        </div>
 
-.nav a:hover {
-  opacity: 1;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
+        <div class="certificate-content">
 
+  <a
+    href="assets/certificates/cor-cert-li-ppc-ads.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>LinkedIn Ads Course: Master B2B Lead Generation</strong>
+  </a>
 
-/* =========================================================
-   6. BRAND / LOGO
-   ========================================================= */
+          <p><br>
+Training focused on using LinkedIn Ads to create targeted B2B campaigns, generate qualified leads, and reach professional audiences effectively.
+          </p>
 
-.brand {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-decoration: none;
-}
+        </div>
 
-.brand img {
-  width: 55px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
+      </article>
 
 
-/* =========================================================
-   7. PROJECTS DROPDOWN
-   ========================================================= */
+      <!-- Certificate 2 -->
 
-.nav-dropdown {
-  position: relative;
-}
+      <article class="certificate-card">
 
-.nav-dropdown-toggle {
-  display: block;
-}
+        <div class="certificate-image">
 
+          <img
+            src="assets/certificates/li-cert-li-ppc-ads.jpg"
+            alt="Linkedln Content and Creative Design Certification"
+          >
 
-/* Dropdown box */
+        </div>
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+        <div class="certificate-content">
 
-  width: 210px;
-  padding: 8px 0;
+  <a
+    href="assets/certificates/li-cert-li-ppc-ads.jpg"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>Linkedln Content and Creative Design Certification</strong>
+  </a>
 
-  background: var(--white);
-  border-radius: 6px;
+          <p><br>
+Training focused on creating engaging LinkedIn content and developing creative designs for professional audiences.
+          </p>
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        </div>
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+      </article>
 
-  transition:
-    opacity 0.25s ease,
-    visibility 0.25s ease;
-}
 
+      <!-- Certificate 3 -->
 
-/* Dropdown links */
+      <article class="certificate-card">
 
-.dropdown-menu a {
-  display: block;
-  padding: 11px 18px;
+        <div class="certificate-image">
 
-  color: var(--navy);
-  font-size: 14px;
-  font-weight: 500;
+          <img
+            src="assets/certificates/hs-cert-digital-marketing.png"
+            alt="HubSpot Digital Marketing Certification"
+          >
 
-  text-decoration: none;
-  opacity: 1;
-}
+        </div>
 
+        <div class="certificate-content">
 
-/* Dropdown link hover */
+  <a
+    href="assets/certificates/hs-cert-digital-marketing.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>HubSpot Digital Marketing Certified</strong>
+  </a>
 
-.dropdown-menu a:hover {
-  background: var(--soft);
-  color: var(--orange);
-  text-decoration: none;
-}
+          <p><br>
+The bearer of this certificate is deemed knowledgeable and skilled in applying digital marketing practices with an inbound mindset. They have been tested on best practices and understand creating SEO friendly content, optimizing a website, creating a social media strategy, using video to engage their audience, amplifying messaging with advertising, and measuring results.          
+	</p>
 
+        </div>
 
-/* Show dropdown */
+      </article>
 
-.nav-dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
 
+      <!-- Certificate 4 -->
 
-/* =========================================================
-   8. KEYBOARD FOCUS
-   ========================================================= */
+      <article class="certificate-card">
 
-.nav a:focus-visible,
-.mobile-toggle:focus-visible {
-  outline: 2px solid var(--white);
-  outline-offset: 3px;
-}
+        <div class="certificate-image">
 
-.dropdown-menu a:focus-visible {
-  outline: 2px solid var(--orange);
-  outline-offset: -2px;
-}
+          <img
+            src="assets/certificates/hs-cert-email-marketing.png"
+            alt="HubSpot Email Marketing Certification"
+          >
 
+        </div>
 
-/* =========================================================
-   9. SOCIAL MEDIA ICONS
-   ========================================================= */
+        <div class="certificate-content">
 
-.socials {
-  display: flex;
-  gap: 15px;
-  margin-left: 3px;
-}
+  <a
+    href="assets/certificates/hs-cert-email-marketing.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>HubSpot Email Marketing Certified</strong>
+  </a>
 
-.socials img {
-  width: 30px;
-  height: 30px;
-  display: block;
-  object-fit: contain;
-}
+          <p><br>
+The bearer of this certificate is hereby deemed knowledgeable of building an
+email marketing strategy to build trust. They have been tested on best
+practices that focus on segmentation, high-performing email sends, outlining
+email design, and email deliverability, and can establish metrics to test,
+optimize, and improving their email marketing strategy.        
+	</p>
 
+        </div>
 
-/* =========================================================
-   10. HERO SECTION
-   ========================================================= */
+      </article>
 
-.hero {
-  min-height: 650px;
-  background: linear-gradient(
-    135deg,
-    var(--orange),
-    var(--orange-dark)
-  );
-  color: var(--white);
-  display: flex;
-  align-items: center;
-}
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
-  padding: 110px 0 55px;
-}
+      <!-- Certificate 5 -->
 
-.hero h1 {
-  font-size: 54px;
-  line-height: 1.1;
-  margin: 0 0 20px;
-  letter-spacing: -1.5px;
-}
+      <article class="certificate-card">
 
-.hero p {
-  font-size: 16px;
-  max-width: 530px;
-  margin: 0 0 26px;
-}
+        <div class="certificate-image">
 
+          <img
+            src="assets/certificates/hs-cert-seo.png"
+            alt="HubSpot SEO Certification"
+          >
 
-/* =========================================================
-   11. BUTTONS
-   ========================================================= */
+        </div>
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+        <div class="certificate-content">
 
-  text-decoration: none;
-
-  background: #fed7aa;
-  color: #172033;
+  <a
+    href="assets/certificates/hs-cert-seo.png"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>HubSpot Email Marketing Certified</strong>
+  </a>
 
-  border-radius: 3px;
-  padding: 10px 20px;
+          <p><br>
+The bearer of this certificate is hereby deemed knowledgeable of building an
+email marketing strategy to build trust. They have been tested on best
+practices that focus on segmentation, high-performing email sends, outlining
+email design, and email deliverability, and can establish metrics to test,
+optimize, and improving their email marketing strategy.        
+	</p>
 
-  font-weight: 700;
+        </div>
 
-  transition: 0.2s;
-}
+      </article>
 
-.btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(0.97);
-}
 
-.btn.purple {
-  background: var(--white);
-  color: #3d0ca9;
-}
 
+    </div>
 
-/* =========================================================
-   12. HERO IMAGE / ART
-   ========================================================= */
+  </div>
 
-.hero-art {
-  width: min(100%, 590px);
-  margin-left: auto;
-}
-
-
-/* =========================================================
-   13. OFFER / FEATURES SECTION
-   ========================================================= */
-
-.offer {
-  background: var(--soft);
-  padding: 48px 0 10px;
-}
-
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
-
-.offer-card {
-  padding: 18px 0 24px;
-}
-
-.offer-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-
-/* =========================================================
-   14. GENERAL SECTION STYLES
-   ========================================================= */
-
-.section {
-  padding: 120px 0;
-}
-
-section {
-  scroll-margin-top: 92px;
-}
-
-h2 {
-  font-size: 42px;
-  line-height: 1.15;
-  letter-spacing: -0.8px;
-  margin: 0 0 35px;
-}
-
-h3 {
-  font-size: 22px;
-  line-height: 1.25;
-  margin: 14px 0 8px;
-}
-
-
-/* =========================================================
-   15. SCREEN READER ONLY
-   ========================================================= */
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-
-/* =========================================================
-   16. ICONS
-   ========================================================= */
-
-.icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 14px;
-  object-fit: contain;
-}
-
-
-/* =========================================================
-   17. SERVICES SECTION
-   ========================================================= */
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.service-card img {
-  display: block;
-  width: 77px;
-  height: 77px;
-  margin: 0 auto 20px;
-  object-fit: contain;
-}
-
-.service-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-
-/* =========================================================
-   18. ABOUT SECTION
-   ========================================================= */
-
-.about {
-  background: var(--soft);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.about-copy p {
-  color: var(--muted);
-}
-
-.about-img {
-  width: 100%;
-  border-radius: 3px;
-}
-
-
-/* =========================================================
-   19. MY OBJECTIVE
-   ========================================================= */
-
-.objective {
-  background: var(--lav);
-  text-align: center;
-  padding: 85px 0;
-}
-
-.objective .container {
-  max-width: 800px;
-}
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 28px;
-  object-fit: contain;
-}
-
-.quote {
-  font-size: 22px;
-  line-height: 1.6;
-  color: var(--navy);
-  margin: 0 0 20px;
-}
-
-.kevin {
-  font-weight: 700;
-}
-
-
-/* =========================================================
-   20. WHY CHOOSE ME SECTION
-   ========================================================= */
-
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
-  margin-top: 60px;
-}
-
-.why-card .icon {
-  margin-bottom: 12px;
-}
-
-.why-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-}
-
-
-/* =========================================================
-   21. CONTACT SECTION
-   ========================================================= */
-
-.contact {
-  background: linear-gradient(
-    35deg,
-    #060097 0%,
-    #8204ff 64%,
-    var(--purple2) 98%
-  );
-
-  color: var(--white);
-  text-align: center;
-  padding: 104px 0;
-}
-
-.contact h2 {
-  color: var(--white);
-  max-width: 760px;
-  margin: 0 auto 5px;
-}
-
-.contact p {
-  margin: 0 0 26px;
-}
-
-
-/* =========================================================
-   22. FOOTER
-   ========================================================= */
-
-.footer {
-  padding: 30px 0;
-  background: #101827;
-  color: #cbd5e1;
-  text-align: center;
-  font-size: 14px;
-}
-
-
-/* =========================================================
-   23. MOBILE MENU BUTTON
-   ========================================================= */
-
-.mobile-toggle {
-  display: none;
-
-  background: none;
-  border: 0;
-
-  color: var(--white);
-  font-size: 28px;
-
-  cursor: pointer;
-}
-
-
-/* =========================================================
-   24. TABLET RESPONSIVE DESIGN
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .nav {
-    gap: 18px;
-  }
-
-  .nav a {
-    font-size: 13px;
-  }
-
-  .hero-grid,
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: auto;
-  }
-
-  .hero-grid {
-    padding-top: 125px;
-  }
-
-  .hero h1 {
-    font-size: 45px;
-  }
-
-  .hero-art {
-    margin: 0 auto;
-  }
-
-  .offer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .why-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-
-/* =========================================================
-   25. MOBILE RESPONSIVE DESIGN
-   ========================================================= */
-
-@media (max-width: 650px) {
-
-  .container {
-    width: min(var(--max), calc(100% - 32px));
-  }
-
-  .site-header {
-    position: fixed;
-  }
-
-  .nav {
-    height: 75px;
-    gap: 10px;
-  }
-
-  .nav a {
-    display: none;
-  }
-
-  .socials {
-    display: none;
-  }
-
-  .mobile-toggle {
-    display: block;
-  }
+</section>
 
-  .nav.open {
-    background: rgba(23, 32, 51, 0.96);
-    height: auto;
-    padding: 18px;
-    align-items: flex-start;
-    flex-direction: column;
-  }
 
-  .nav.open a {
-    display: block;
-  }
+  <!-- ABOUT SECTION -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
 
-  .nav.open .mobile-toggle {
-    position: absolute;
-    right: 16px;
-    top: 14px;
-  }
+      <div class="about-copy">
+        <h2>Helping Businesses Grow Online</h2>
 
-  .hero-grid {
-    padding: 105px 0 50px;
-  }
+        <p>
+          I’m a digital marketing specialist with experience in SEO,
+          content, social media, email marketing, lead generation,
+          graphic design, and LinkedIn advertising.
+        </p>
 
-  .hero h1 {
-    font-size: 38px;
-  }
+        <p>
+          I help businesses build their online presence through clear
+          content, engaging campaigns, and practical marketing strategies.
+          I also manage websites, create marketing materials, and track
+          campaign results to help improve performance.
+        </p>
+      </div>
 
-  h2 {
-    font-size: 34px;
-  }
+      <img
+        class="about-img"
+        src="assets/helping-businesses-grow-online.svg"
+        alt="">
 
-  .offer-grid,
-  .services-grid,
-  .why-grid {
-    grid-template-columns: 1fr;
-  }
+    </div>
+  </section>
 
-  .section {
-    padding: 80px 0;
-  }
 
-  .about-grid {
-    gap: 35px;
-  }
+  <!-- OBJECTIVE SECTION -->
+  <section class="objective" id="objectives">
+    <div class="container">
 
-  .contact h2 {
-    font-size: 32px;
-  }
+      <img
+        class="avatar"
+        src="assets/turning -ideas-into-better-marketing.svg"
+        alt="">
 
-  section {
-    scroll-margin-top: 75px;
-  }
-}
+      <p class="quote">
+        “I help businesses improve their online presence through SEO,
+        content, social media, email marketing, graphic design, lead
+        generation, and LinkedIn advertising. My goal is simple: create
+        clear, useful, and engaging marketing that helps businesses
+        reach the right audience.”
+      </p>
 
+      <div class="kevin">
+        Turning Ideas Into Better Marketing
+      </div>
 
-/* =========================================================
-   CERTIFICATES SECTION
-   ========================================================= */
+    </div>
+  </section>
 
-.certificates-section {
-  padding: 110px 0;
-  background: var(--soft);
-}
 
+  <!-- WHY CHOOSE ME SECTION -->
+  <section class="section" id="whyus">
+    <div class="container">
 
-/* SECTION HEADING */
+      <h2>Why Choose Me</h2>
 
-.certificates-section .section-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-  text-align: center;
-}
+      <div class="why-grid">
 
-.certificates-section .section-label {
-  margin-bottom: 14px;
+        <article class="why-card">
+          <img class="icon" src="assets/passionate.svg" alt="">
+          <h3>Passionate</h3>
+          <p>
+            I enjoy creating content and marketing campaigns that help
+            businesses reach the right audience and grow online.
+          </p>
+        </article>
 
-  color: var(--orange);
+        <article class="why-card">
+          <img class="icon" src="assets/professional.svg" alt="">
+          <h3>Professional</h3>
+          <p>
+            I have hands-on experience in SEO, social media, email marketing,
+            content creation, websites, lead generation, and digital marketing.
+          </p>
+        </article>
 
-  font-size: 13px;
-  font-weight: 700;
+        <article class="why-card">
+          <img class="icon" src="assets/support.svg" alt="">
+          <h3>Reliable Support</h3>
+          <p>
+            I can help with everyday marketing tasks, manage campaigns,
+            create content, and keep projects organized and on track.
+          </p>
+        </article>
 
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
+      </div>
+    </div>
+  </section>
 
-.certificates-section .section-heading h2 {
-  margin-bottom: 18px;
-}
 
-.certificates-section .section-heading p {
-  margin: 0;
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="container">
 
-  color: var(--muted);
+      <h2>Grow Your Business Online</h2>
 
-  font-size: 16px;
-  line-height: 1.7;
-}
+      <p>
+        Get the digital marketing support you need to build your online presence.
+      </p>
 
+<a
+  class="btn purple"
+  href="mailto:kevinarevalofreelanceph@gmail.com?subject=I%20would%20like%20to%20know%20more%20about%20your%20services&body=Hi%20Kevin%2C%0A%0AI%20am%20interested%20in%20your%20services.%20Can%20you%20please%20get%20back%20to%20me,%20and%20let%27s%20talk%20about%20it.%0A%0AThank%20you%21"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Contact Me
+</a>
 
-/* CERTIFICATE GRID */
 
-.certificates-grid {
-  display: grid;
+    </div>
+  </section>
 
-  grid-template-columns: repeat(3, 1fr);
+</main>
 
-  gap: 30px;
-}
 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    © 2026 kevinarevalo. All rights reserved.
+  </div>
+</footer>
 
-/* CERTIFICATE CARD */
 
-.certificate-card {
-  overflow: hidden;
+<script src="script.js"></script>
 
-  background: var(--white);
-
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.certificate-card:hover {
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 15px 35px rgba(23, 32, 51, 0.10);
-}
-
-
-/* CERTIFICATE IMAGE */
-
-.certificate-image {
-  width: 100%;
-  height: 350px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #f8fafc;
-
-  border-bottom: 1px solid #e5e7eb;
-  overflow: hidden;
-}
-
-.certificate-image img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-}
-
-
-/* CERTIFICATE CONTENT */
-
-.certificate-content {
-  padding: 26px;
-}
-
-.certificate-content h3 {
-  margin: 0 0 12px;
-
-  font-size: 20px;
-  line-height: 1.4;
-}
-
-.certificate-content p {
-  margin: 0;
-
-  color: var(--muted);
-
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-
-/* =========================================================
-   CERTIFICATES TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .certificates-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-
-
-/* =========================================================
-   CERTIFICATES MOBILE
-   ========================================================= */
-
-@media (max-width: 650px) {
-
-  .certificates-section {
-    padding: 75px 0;
-  }
-
-  .certificates-section .section-heading {
-    margin-bottom: 40px;
-  }
-
-  .certificates-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .certificate-content {
-    padding: 24px;
-  }
-
-}
-
-/* =========================================================
-   BLOG PAGE
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   BLOG HERO
-   --------------------------------------------------------- */
-
-.blog-hero {
-  padding: 170px 0 90px;
-
-  background: linear-gradient(
-    135deg,
-    var(--orange),
-    var(--orange-dark)
-  );
-
-  color: var(--white);
-  text-align: center;
-}
-
-.blog-hero .container {
-  max-width: 850px;
-}
-
-.blog-label {
-  margin: 0 0 14px;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-
-  color: #fed7aa;
-}
-
-.blog-hero h1 {
-  margin: 0 0 20px;
-
-  font-size: 52px;
-  line-height: 1.15;
-  letter-spacing: -1px;
-}
-
-.blog-intro {
-  max-width: 720px;
-
-  margin: 0 auto;
-
-  font-size: 17px;
-  line-height: 1.8;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG SECTION
-   --------------------------------------------------------- */
-
-.blog-section {
-  padding: 110px 0;
-  background: var(--white);
-}
-
-.blog-section-heading {
-  max-width: 760px;
-  margin: 0 auto 55px;
-
-  text-align: center;
-}
-
-.blog-section-heading h2 {
-  margin-bottom: 15px;
-}
-
-.blog-section-heading p {
-  margin: 0;
-
-  color: var(--muted);
-  font-size: 16px;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG GRID
-   --------------------------------------------------------- */
-
-.blog-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 30px;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG CARD
-   --------------------------------------------------------- */
-
-.blog-card {
-  overflow: hidden;
-
-  background: var(--white);
-
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-
-  box-shadow:
-    0 15px 35px rgba(23, 32, 51, 0.10);
-}
-
-
-/* ---------------------------------------------------------
-   BLOG IMAGE
-   --------------------------------------------------------- */
-
-.blog-image {
-  display: block;
-
-  width: 100%;
-  height: 220px;
-
-  overflow: hidden;
-
-  background: var(--soft);
-}
-
-.blog-image img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  transition: transform 0.3s ease;
-}
-
-.blog-card:hover .blog-image img {
-  transform: scale(1.03);
-}
-
-
-/* ---------------------------------------------------------
-   BLOG CONTENT
-   --------------------------------------------------------- */
-
-.blog-content {
-  padding: 26px;
-}
-
-.blog-category {
-  margin: 0 0 10px;
-
-  color: var(--orange);
-
-  font-size: 12px;
-  font-weight: 700;
-
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.blog-content h3 {
-  margin: 0 0 14px;
-
-  font-size: 21px;
-  line-height: 1.4;
-}
-
-.blog-content h3 a {
-  color: var(--navy);
-
-  text-decoration: none;
-}
-
-.blog-content h3 a:hover {
-  color: var(--orange);
-}
-
-.blog-excerpt {
-  margin: 0 0 22px;
-
-  color: var(--muted);
-
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG META
-   --------------------------------------------------------- */
-
-.blog-meta {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-
-  gap: 15px;
-
-  padding-top: 18px;
-
-  border-top: 1px solid #e5e7eb;
-
-  color: var(--muted);
-
-  font-size: 12px;
-}
-
-.blog-read-more {
-  color: var(--orange);
-
-  font-weight: 700;
-
-  text-decoration: none;
-
-  white-space: nowrap;
-}
-
-.blog-read-more:hover {
-  color: var(--orange-dark);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG CTA
-   --------------------------------------------------------- */
-
-.blog-cta {
-  padding: 100px 0;
-
-  background: linear-gradient(
-    35deg,
-    #060097 0%,
-    #8204ff 64%,
-    var(--purple2) 98%
-  );
-
-  color: var(--white);
-
-  text-align: center;
-}
-
-.blog-cta h2 {
-  max-width: 760px;
-
-  margin: 0 auto 8px;
-
-  color: var(--white);
-}
-
-.blog-cta p {
-  margin: 0 auto 26px;
-
-  max-width: 650px;
-}
-
-
-/* ---------------------------------------------------------
-   BLOG TABLET
-   --------------------------------------------------------- */
-
-@media (max-width: 900px) {
-
-  .blog-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .blog-hero h1 {
-    font-size: 45px;
-  }
-
-}
-
-
-/* ---------------------------------------------------------
-   BLOG MOBILE
-   --------------------------------------------------------- */
-
-@media (max-width: 650px) {
-
-  .blog-hero {
-    padding: 125px 0 70px;
-  }
-
-  .blog-hero h1 {
-    font-size: 36px;
-  }
-
-  .blog-intro {
-    font-size: 15px;
-  }
-
-  .blog-section {
-    padding: 75px 0;
-  }
-
-  .blog-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .blog-image {
-    height: 210px;
-  }
-
-  .blog-content {
-    padding: 24px;
-  }
-
-  .blog-cta {
-    padding: 75px 0;
-  }
-
-  .blog-cta h2 {
-    font-size: 32px;
-  }
-
-}
-
-/* =========================================================
-   BLOG ARTICLE
-   ========================================================= */
-
-.article-header {
-  background: linear-gradient(
-    135deg,
-    var(--orange),
-    var(--orange-dark)
-  );
-
-  color: var(--white);
-
-  text-align: center;
-
-  padding: 155px 0 75px;
-}
-
-
-.article-header .container {
-  max-width: 900px;
-}
-
-
-.article-category {
-  margin: 0 0 15px;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  letter-spacing: 1.5px;
-
-  text-transform: uppercase;
-
-  opacity: 0.9;
-}
-
-
-.article-header h1 {
-  margin: 0 auto 18px;
-
-  font-size: 48px;
-  line-height: 1.2;
-
-  letter-spacing: -1px;
-}
-
-
-.article-meta {
-  margin: 0;
-
-  font-size: 14px;
-
-  opacity: 0.9;
-}
-
-
-/* =========================================================
-   ARTICLE CONTENT AREA
-   ========================================================= */
-
-.article-page {
-  background: var(--white);
-
-  padding: 80px 0 100px;
-}
-
-
-.article-container {
-  max-width: 850px;
-}
-
-
-/* =========================================================
-   ARTICLE INTRO
-   ========================================================= */
-
-.article-intro {
-  margin-bottom: 45px;
-
-  padding-bottom: 35px;
-
-  border-bottom: 1px solid #e5e7eb;
-}
-
-
-.article-intro p {
-  margin: 0;
-
-  font-size: 20px;
-  line-height: 1.8;
-
-  color: var(--navy);
-}
-
-
-/* =========================================================
-   ARTICLE BODY
-   ========================================================= */
-
-.article-content {
-  color: var(--navy);
-
-  font-size: 16px;
-}
-
-
-.article-content h2 {
-  margin: 50px 0 18px;
-
-  font-size: 32px;
-  line-height: 1.25;
-}
-
-
-.article-content h2:first-child {
-  margin-top: 0;
-}
-
-
-.article-content h3 {
-  margin: 32px 0 12px;
-
-  font-size: 22px;
-}
-
-
-.article-content p {
-  margin: 0 0 22px;
-
-  color: #374151;
-
-  line-height: 1.8;
-}
-
-
-.article-content ul,
-.article-content ol {
-  margin: 0 0 28px;
-
-  padding-left: 25px;
-
-  color: #374151;
-}
-
-
-.article-content li {
-  margin-bottom: 10px;
-
-  line-height: 1.7;
-}
-
-
-.article-content a {
-  color: var(--orange);
-
-  font-weight: 600;
-}
-
-
-.article-content a:hover {
-  color: var(--orange-dark);
-}
-
-
-/* =========================================================
-   FEATURED IMAGE
-   ========================================================= */
-
-.article-featured-image {
-  margin-top: -50px;
-  margin-bottom: 30px;
-
-  border-radius: 8px;
-
-  overflow: hidden;
-
-  background: var(--soft);
-}
-
-
-.article-featured-image img {
-  width: 100%;
-  height: auto;
-
-  display: block;
-}
-
-
-/* =========================================================
-   ARTICLE CTA
-   ========================================================= */
-
-.article-cta {
-  margin-top: 65px;
-
-  padding: 45px;
-
-  background: var(--lav);
-
-  border-radius: 8px;
-
-  text-align: center;
-}
-
-
-.article-cta h2 {
-  margin: 0 0 12px;
-
-  font-size: 30px;
-}
-
-
-.article-cta p {
-  max-width: 650px;
-
-  margin: 0 auto 25px;
-
-  color: var(--muted);
-}
-
-
-/* =========================================================
-   BACK TO BLOG
-   ========================================================= */
-
-.article-back {
-  margin-top: 40px;
-
-  text-align: center;
-}
-
-
-.article-back a {
-  color: var(--orange);
-
-  font-weight: 600;
-
-  text-decoration: none;
-}
-
-
-.article-back a:hover {
-  text-decoration: underline;
-
-  text-underline-offset: 4px;
-}
-
-
-/* =========================================================
-   ARTICLE TABLET
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-  .article-header {
-    padding: 135px 0 65px;
-  }
-
-  .article-header h1 {
-    font-size: 42px;
-  }
-
-  .article-page {
-    padding: 65px 0 80px;
-  }
-
-}
-
-
-/* =========================================================
-   ARTICLE MOBILE
-   ========================================================= */
-
-@media (max-width: 650px) {
-
-  .article-header {
-    padding: 115px 0 55px;
-  }
-
-  .article-header h1 {
-    font-size: 34px;
-
-    letter-spacing: -0.5px;
-  }
-
-  .article-page {
-    padding: 55px 0 70px;
-  }
-
-  .article-intro p {
-    font-size: 18px;
-  }
-
-  .article-content {
-    font-size: 15px;
-  }
-
-  .article-content h2 {
-    font-size: 27px;
-
-    margin-top: 40px;
-  }
-
-  .article-content h3 {
-    font-size: 20px;
-  }
-
-  .article-cta {
-    padding: 32px 22px;
-  }
-
-  .article-cta h2 {
-    font-size: 26px;
-  }
-
-}
-
-/* =========================================================
-   ARTICLE BLOCKQUOTE
-   ========================================================= */
-
-.article-content blockquote {
-  margin: 30px 0;
-  padding: 20px 25px;
-
-  border-left: 4px solid var(--orange);
-
-  background: var(--soft);
-
-  color: var(--navy);
-
-  font-size: 17px;
-  line-height: 1.8;
-  font-style: italic;
-}
+</body>
+</html>
