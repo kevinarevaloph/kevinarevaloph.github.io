@@ -1522,3 +1522,557 @@ h3 {
   line-height: 1.8;
   font-style: italic;
 }
+
+/* =========================================================
+   VIRTUAL ASSISTANT LANDING PAGE
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   HERO
+--------------------------------------------------------- */
+
+.va-hero {
+  background:
+    linear-gradient(
+      135deg,
+      var(--orange),
+      var(--orange-dark)
+    );
+  color: var(--white);
+  padding: 175px 0 110px;
+}
+
+.va-hero-content {
+  max-width: 850px;
+}
+
+.va-eyebrow {
+  margin: 0 0 15px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.va-hero h1 {
+  max-width: 850px;
+  margin: 0 0 25px;
+  font-size: 58px;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.va-hero-text {
+  max-width: 760px;
+  margin: 0 0 20px;
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.va-hero-highlight {
+  margin: 0 0 32px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.va-hero .btn,
+.va-cta .btn {
+  display: inline-block;
+  padding: 14px 25px;
+  background: var(--white);
+  color: var(--orange-dark);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.va-hero .btn:hover,
+.va-cta .btn:hover {
+  transform: translateY(-2px);
+  background: #fff7ed;
+}
+
+
+/* ---------------------------------------------------------
+   SHARED SECTION HEADING
+--------------------------------------------------------- */
+
+.va-section-heading {
+  max-width: 800px;
+  margin-bottom: 45px;
+}
+
+.va-section-heading h2 {
+  margin: 0 0 18px;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: -.8px;
+}
+
+.va-section-heading > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   INTRO
+--------------------------------------------------------- */
+
+.va-intro {
+  padding: 90px 0;
+  background: var(--white);
+}
+
+.va-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 55px;
+  max-width: 950px;
+}
+
+.va-intro-grid p {
+  margin: 0 0 20px;
+  color: #374151;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.va-intro-callout {
+  max-width: 950px;
+  margin-top: 35px;
+  padding: 28px 32px;
+  background: var(--lav);
+  border-left: 4px solid var(--orange);
+  border-radius: 5px;
+}
+
+.va-intro-callout p {
+  margin: 0;
+  color: var(--navy);
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   SERVICES
+--------------------------------------------------------- */
+
+.va-services {
+  padding: 95px 0 105px;
+  background: var(--soft);
+}
+
+.va-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.va-service-card {
+  padding: 32px;
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.va-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(23, 32, 51, .07);
+}
+
+.va-service-number {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.va-service-card h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.va-service-card > p {
+  margin: 0 0 20px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.va-service-card ul {
+  margin: 0 0 22px;
+  padding-left: 20px;
+  color: #374151;
+}
+
+.va-service-card li {
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+
+.va-best-for,
+.va-tools,
+.va-service-note {
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.va-service-note {
+  color: var(--navy) !important;
+}
+
+
+/* ---------------------------------------------------------
+   VALUE / EXPERIENCE
+--------------------------------------------------------- */
+
+.va-value {
+  padding: 95px 0;
+  background: var(--white);
+}
+
+.va-value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.va-value-card {
+  padding: 28px 24px;
+  background: var(--soft);
+  border-radius: 7px;
+}
+
+.va-value-card h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.va-value-card p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   TOOLS
+--------------------------------------------------------- */
+
+.va-tools-section {
+  padding: 95px 0;
+  background: var(--lav);
+}
+
+.va-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.va-tool-group {
+  padding: 25px 28px;
+  background: var(--white);
+  border-radius: 7px;
+}
+
+.va-tool-group h3 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: 18px;
+}
+
+.va-tool-group p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   SUPPORT OPTIONS
+--------------------------------------------------------- */
+
+.va-support {
+  padding: 95px 0;
+  background: var(--white);
+}
+
+.va-support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.va-support-card {
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.va-support-number {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--orange);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.va-support-card h3 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 22px;
+}
+
+.va-support-card p {
+  margin: 0 0 18px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.va-support-card strong {
+  color: var(--navy);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL CTA
+--------------------------------------------------------- */
+
+.va-cta {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      135deg,
+      var(--orange),
+      var(--orange-dark)
+    );
+  color: var(--white);
+  text-align: center;
+}
+
+.va-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.va-cta .va-eyebrow {
+  opacity: .9;
+}
+
+.va-cta h2 {
+  margin: 0 0 25px;
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: -.8px;
+}
+
+.va-cta p {
+  max-width: 700px;
+  margin: 0 auto 14px;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.va-cta-question {
+  margin-top: 28px !important;
+  margin-bottom: 28px !important;
+  font-weight: 600;
+}
+
+
+/* ---------------------------------------------------------
+   SIGNATURE
+--------------------------------------------------------- */
+
+.va-signature {
+  padding: 65px 0;
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+}
+
+.va-signature h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.va-signature-title {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.va-signature p:last-child {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #d1d5db;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .va-hero {
+    padding: 145px 0 90px;
+  }
+
+  .va-hero h1 {
+    font-size: 46px;
+  }
+
+  .va-section-heading h2 {
+    font-size: 36px;
+  }
+
+  .va-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .va-value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .va-support-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 650px) {
+
+  .va-hero {
+    padding: 120px 0 70px;
+  }
+
+  .va-hero h1 {
+    font-size: 35px;
+    letter-spacing: -.5px;
+  }
+
+  .va-hero-text {
+    font-size: 17px;
+  }
+
+  .va-hero-highlight {
+    font-size: 17px;
+  }
+
+  .va-intro,
+  .va-services,
+  .va-value,
+  .va-tools-section,
+  .va-support {
+    padding: 65px 0;
+  }
+
+  .va-section-heading {
+    margin-bottom: 32px;
+  }
+
+  .va-section-heading h2 {
+    font-size: 30px;
+  }
+
+  .va-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .va-intro-callout {
+    padding: 22px;
+  }
+
+  .va-service-card {
+    padding: 25px;
+  }
+
+  .va-service-card h3 {
+    font-size: 21px;
+  }
+
+  .va-value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .va-tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .va-support-card {
+    padding: 25px;
+  }
+
+  .va-cta {
+    padding: 75px 0;
+  }
+
+  .va-cta h2 {
+    font-size: 32px;
+  }
+
+  .va-cta p {
+    font-size: 16px;
+  }
+
+  .va-signature {
+    padding: 50px 0;
+  }
+
+}
+
+/* =========================================================
+   PURPLE BUTTON
+   Used for the Virtual Assistant services CTA
+========================================================= */
+
+.btn.purple {
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.btn.purple:hover {
+  background: var(--purple2);
+  border-color: var(--purple2);
+  color: var(--white);
+  transform: translateY(-2px);
+}
