@@ -1754,115 +1754,103 @@
     initializeDragAndDrop();
   }
 
-  /* =========================================================
-     RENDER TASK
-     ========================================================= */
+ /* =========================================================
+   RENDER TASK
+   ========================================================= */
 
-  function renderTask(task) {
-    const labels =
-      Array.isArray(
-        task.labels
-      )
-        ? task.labels
-        : [];
+function renderTask(task) {
+  const labels =
+    Array.isArray(
+      task.labels
+    )
+      ? task.labels
+      : [];
 
-    return `
-      <article
-        class="task"
-        draggable="true"
-        data-task-id="${escapeHTML(
-          task.id
-        )}"
-      >
+  return `
+    <article
+      class="task"
+      draggable="true"
+      data-task-id="${escapeHTML(
+        task.id
+      )}"
+    >
 
-        <h3>
-          ${escapeHTML(
-            task.title
-          )}
-        </h3>
+      <h3>
+        ${escapeHTML(
+          task.title
+        )}
+      </h3>
 
-        ${
-          task.priority
-            ? `
-                <span class="priority ${escapeHTML(
+      ${
+        task.priority
+          ? `
+              <span class="priority ${escapeHTML(
+                task.priority
+              )}">
+                ${escapeHTML(
                   task.priority
-                )}">
-                  ${escapeHTML(
-                    task.priority
-                  )}
-                </span>
-              `
-            : ""
-        }
+                )}
+              </span>
+            `
+          : ""
+      }
 
-        ${
-          task.description
-            ? `
-                <p>
-                  ${escapeHTML(
-                    task.description
-                  )}
-                </p>
-              `
-            : ""
-        }
+      ${
+        labels.length ||
+        task.due
+          ? `
+              <div class="task-meta">
 
-        ${
-          labels.length ||
-          task.due
-            ? `
-                <div class="task-meta">
+                ${labels
+                  .map(
+                    (label) => `
+                      <span class="tag">
+                        ${escapeHTML(
+                          label
+                        )}
+                      </span>
+                    `
+                  )
+                  .join("")}
 
-                  ${labels
-                    .map(
-                      (label) => `
-                        <span class="tag">
+                ${
+                  task.due
+                    ? `
+                        <span class="due">
                           ${escapeHTML(
-                            label
+                            formatDate(
+                              task.due
+                            )
                           )}
                         </span>
                       `
-                    )
-                    .join("")}
+                    : ""
+                }
 
-                  ${
-                    task.due
-                      ? `
-                          <span class="due">
-                            ${escapeHTML(
-                              formatDate(
-                                task.due
-                              )
-                            )}
-                          </span>
-                        `
-                      : ""
-                  }
+              </div>
+            `
+          : ""
+      }
 
-                </div>
-              `
-            : ""
-        }
+      <div class="task-actions">
 
-        <div class="task-actions">
+        <button
+          type="button"
+          class="task-delete-button"
+          data-delete-task="${escapeHTML(
+            task.id
+          )}"
+          aria-label="Delete task"
+          title="Delete task"
+        >
+          Delete
+        </button>
 
-          <button
-            type="button"
-            class="task-delete-button"
-            data-delete-task="${escapeHTML(
-              task.id
-            )}"
-            aria-label="Delete task"
-            title="Delete task"
-          >
-            Delete
-          </button>
+      </div>
 
-        </div>
-
-      </article>
-    `;
-  }
+    </article>
+  `;
+}
 
   /* =========================================================
      PROJECT CARDS
