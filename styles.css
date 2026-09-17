@@ -294,9 +294,10 @@ a {
 .btn:hover {
   transform: translateY(-2px);
   filter: brightness(0.97);
+
 }
 
-.btn.purple {
+.btn.purple1 {
   background: var(--white);
   color: #3d0ca9;
 }
