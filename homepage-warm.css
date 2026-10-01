@@ -134,7 +134,7 @@
 
 .hero-art {
   display: block;
-  width: min(100%, 350px);
+  width: min(90%, 350px);
   height: auto;
   margin: 0 auto;
   object-fit: contain;
