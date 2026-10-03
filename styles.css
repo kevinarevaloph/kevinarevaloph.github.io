@@ -235,6 +235,10 @@ a {
    10. HERO SECTION
    ========================================================= */
 
+h3 {
+  color: #ea580c;
+}
+
 .hero {
   min-height: 650px;
   background: linear-gradient(
