@@ -51,12 +51,87 @@
    HERO — COMPACT VERSION
    ========================================================= */
 
+.welcome-text {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+
+.welcome-text span {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--home-white);
+
+  animation: welcomeLoop 3s ease-in-out infinite;
+}
+
+/* Each word appears one after another */
+.welcome-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.welcome-text span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.welcome-text span:nth-child(3) {
+  animation-delay: 0.30s;
+}
+
+.welcome-text span:nth-child(4) {
+  animation-delay: 0.45s;
+}
+
+@keyframes welcomeLoop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  85% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+
 .hero {
   min-height: 590px;
-  padding: 145px 0 90px;
+  padding: 30px 100px 90px;
   display: flex;
   align-items: center;
   background: var(--home-bg);
+  background:
+    linear-gradient(
+      rgba(245, 239, 230, -0.100),
+      rgba(245, 239, 230, -0.90)
+
+    ),
+    url("assets/hero-background.PNG");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+
   overflow: hidden;
 }
 
@@ -91,19 +166,19 @@
 
 .hero h1 {
   margin: 0 0 18px;
-  color: var(--home-navy);
-  font-size: clamp(46px, 6vw, 68px);
-  line-height: 0.98;
+  color: #f5efe6;
+  font-size: clamp(70px, 10vw, 50px);
+  line-height: 1.0;
   letter-spacing: -3px;
-  font-weight: 700;
+  font-weight: 1000;
 }
 
 .hero p {
   max-width: 620px;
   margin: 0 0 28px;
-  color: var(--home-text);
-  font-size: 17px;
-  line-height: 1.7;
+  color: #f5efe6;
+  font-size: 18px;
+  line-height: 1.1;
 }
 
 .hero .btn {
@@ -111,13 +186,12 @@
   align-items: center;
   justify-content: center;
   min-height: 48px;
-  padding: 12px 25px;
-  border: 1px solid var(--home-navy);
-  border-radius: 4px;
-  background: var(--home-navy);
+  padding: 10px 20px 8px 20px;
+  border-radius: 10px;
+  background: #f97316;
   color: #fff;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   letter-spacing: 0.8px;
   text-decoration: none;
   transition:
@@ -127,16 +201,16 @@
 }
 
 .hero .btn:hover {
-  background: var(--home-orange);
-  border-color: var(--home-orange);
+  background: #f5efe6;
   transform: translateY(-2px);
+  color: var(--home-navy);
 }
 
 .hero-art {
   display: block;
-  width: min(90%, 350px);
-  height: auto;
-  margin: 0 auto;
+  width: min(90%, 450px);
+  height: 0 auto;
+  margin: 50px 50px 50px -100;
   object-fit: contain;
 }
 
