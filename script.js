@@ -33,3 +33,21 @@ document.querySelectorAll('[data-cta]').forEach((cta) => {
   });
 
 });
+
+// Projects dropdown
+const projectDropdown = document.querySelector('.nav-dropdown');
+const projectToggle = document.querySelector('.nav-dropdown-toggle');
+
+if (projectDropdown && projectToggle) {
+  projectToggle.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    projectDropdown.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!projectDropdown.contains(event.target)) {
+      projectDropdown.classList.remove('open');
+    }
+  });
+}
