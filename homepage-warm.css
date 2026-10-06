@@ -47,6 +47,7 @@
 }
 
 
+
 /* =========================================================
    HERO — COMPACT VERSION
    ========================================================= */
@@ -188,8 +189,8 @@
   min-height: 48px;
   padding: 10px 20px 8px 20px;
   margin-right: 10px;
-  margin-bottom: 10px;   
-  border-radius: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
   background: #f97316;
   color: #fff;
   font-size: 20px;
@@ -711,6 +712,88 @@
   color: var(--home-navy);
   transform: translateY(-2px);
 }
+
+/* =========================================================
+   HOME FOOTER — COMPACT VERSION
+   ========================================================= */
+
+.home-footer {
+  text-align: center;
+  min-height: 400px;
+  padding: 200px 50px;
+  display: flex;
+  background: var(--home-bg);
+  background:
+    linear-gradient(
+      rgba(245, 239, 230, -0.100),
+      rgba(245, 239, 230, -0.90)
+
+    ),
+    url("assets/hero-background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+
+  overflow: hidden;
+}
+
+.home-footer-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  align-items: center;
+  gap: 55px;
+}
+
+.home-footer h1 {
+  margin: 0 0 18px;
+  color: #f5efe6;
+  font-size: clamp(70px, 10vw, 50px);
+  line-height: 1.0;
+  letter-spacing: -3px;
+  font-weight: 1000;
+}
+
+.home-footer p {
+  align-items: center;
+  max-width: 620px;
+  margin: 0 0 28px;
+  color: #f5efe6;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.home-footer .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 20px 8px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #f97316;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-footer .btn:hover {
+  background: #f5efe6;
+  transform: translateY(-2px);
+  color: var(--home-navy);
+}
+
+
 
 
 /* =========================================================
