@@ -234,6 +234,32 @@
   line-height: 1.75;
 }
 
+.project-box-details {
+  margin: 0 0 25px;
+
+  color: var(--muted);
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.project-box-details p {
+  margin: 0 0 16px;
+}
+
+.project-box-details strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.project-box-details ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+
+.project-box-details li {
+  margin-bottom: 8px;
+}
 
 /* =========================================================
    7. PROJECT SERVICE TAGS
