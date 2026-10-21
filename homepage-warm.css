@@ -974,7 +974,7 @@
   .hero {
     min-height: 0;
     height: auto;
-    padding: 35px 20px 20px;
+    padding-bottom: 0;
     background-attachment: scroll;
     overflow: hidden;
   }
@@ -982,7 +982,9 @@
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    row-gap: 10px;
     text-align: center;
   }
 
@@ -1018,10 +1020,14 @@
 
   .hero-art {
     display: block;
-    width: min(100%, 340px);
+    width: min(115%, 400px);
+    max-width: none;
     height: auto;
-    margin: 0 auto;
+    margin-left: -20px;
+    margin-right: auto;
+    margin-bottom: 0;
     object-fit: contain;
+    transform: none;
   }
 }
 
