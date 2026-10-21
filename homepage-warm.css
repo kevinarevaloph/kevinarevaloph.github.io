@@ -115,24 +115,11 @@
 
 
 .hero {
-  min-height: 590px;
-  padding: 30px 100px 90px;
+  min-height: 340px;
+  padding: 10px 60px 0;
   display: flex;
   align-items: center;
-  background: var(--home-bg);
-  background:
-    linear-gradient(
-      rgba(245, 239, 230, -0.100),
-      rgba(245, 239, 230, -0.90)
-
-    ),
-    url("assets/hero-background.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-
+  background: #F5EFE6;
   overflow: hidden;
 }
 
@@ -167,7 +154,7 @@
 
 .hero h1 {
   margin: 0 0 18px;
-  color: #f5efe6;
+  color: #172033;
   font-size: clamp(70px, 10vw, 50px);
   line-height: 1.0;
   letter-spacing: -3px;
@@ -177,7 +164,7 @@
 .hero p {
   max-width: 620px;
   margin: 0 0 28px;
-  color: #f5efe6;
+  color: #172033;
   font-size: 18px;
   line-height: 1.1;
 }
@@ -209,11 +196,13 @@
   color: var(--home-navy);
 }
 
+
 .hero-art {
   display: block;
-  width: min(90%, 450px);
-  height: 0 auto;
-  margin: 50px 50px 50px -100;
+  width: 200%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
   object-fit: contain;
 }
 
@@ -825,9 +814,13 @@
     gap: 45px;
   }
 
-  .hero-art {
-    width: min(100%, 380px);
-  }
+.hero-art {
+  display: block;
+  width: min(100%, 800px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
 
   .offer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
