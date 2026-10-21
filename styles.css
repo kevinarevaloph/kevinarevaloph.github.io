@@ -245,23 +245,13 @@ a {
 
 
 .hero {
-  min-height: 650px;
-  background: linear-gradient(
-    135deg,
-    var(--orange),
-    var(--orange-dark)
-  );
-  color: #f5efe6;
-  display: flex;
-  align-items: center;
+  min-height: 0;
+  padding-bottom: 0;
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
-  padding: 110px 0 55px;
+  padding-top: 90px;
+  padding-bottom: 0;
 }
 
 .hero h1 {
