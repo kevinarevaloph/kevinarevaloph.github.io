@@ -308,7 +308,7 @@ a {
 
 .hero-art {
   width: min(100%, 590px);
-  margin-left: auto;
+  margin-left: -30px;
 }
 
 
