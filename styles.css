@@ -2128,3 +2128,15 @@ h3 {
     padding: 12px 14px;
   }
 }
+
+/* Enlarge and center hero art on mobile */
+@media (max-width: 650px) {
+  .hero-grid .hero-art {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    transform: none;
+  }
+}
