@@ -1020,8 +1020,8 @@
 
   .hero-art {
     display: block;
-    width: min(115%, 400px);
-    max-width: 100%;
+    width: 125%;
+    max-width: 460px;
     height: auto;
     margin: 0 auto;
     object-fit: contain;
