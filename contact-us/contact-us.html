@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Kevin Arevalo</title>
+
+  <meta
+    name="description"
+    content="Get in touch with Kevin Arevalo for digital marketing, SEO, content marketing, social media, email marketing, lead generation, and website support."
+  >
+
+  <link rel="icon" type="image/png" href="../assets/favicon-o.png">
+
+  <!-- Shared Website Styles -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Contact Page Styles -->
+  <link rel="stylesheet" href="contact-us.css">
+
+  <!-- Contact Page and Calendar Layout -->
+  <style>
+
+    /* =====================================================
+       GENERAL CONTACT PAGE
+    ====================================================== */
+
+    .contact-page {
+      color: var(--navy);
+      background: var(--white);
+    }
+
+    .contact-container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* =====================================================
+       CONTACT HERO
+    ====================================================== */
+
+    .contact-hero {
+      background: linear-gradient(
+        135deg,
+        var(--orange),
+        var(--orange-dark)
+      );
+      color: var(--white);
+      text-align: center;
+      padding: 170px 20px 110px;
+    }
+
+    .contact-hero .contact-container {
+      max-width: 850px;
+    }
+
+    .contact-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .contact-hero h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.15;
+      margin: 0 0 24px;
+    }
+
+    .contact-hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    /* =====================================================
+       BUTTON
+    ====================================================== */
+
+    .contact-primary-btn {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .contact-primary-btn:hover {
+      background: var(--purple);
+      transform: translateY(-2px);
+    }
+
+    /* =====================================================
+       CONTACT INFORMATION
+    ====================================================== */
+
+    .contact-information {
+      padding: 90px 0;
+    }
+
+    .contact-heading {
+      max-width: 750px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .contact-heading h2,
+    .contact-services h2,
+    .contact-final h2,
+    .contact-booking h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .contact-heading p,
+    .contact-services > .contact-container > p {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: var(--soft);
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .contact-icon {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      background: var(--lav);
+      color: var(--purple);
+      border-radius: 50%;
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 14px;
+      font-size: 21px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-card a {
+      color: var(--orange-dark);
+      font-weight: 600;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* =====================================================
+       HUBSPOT BOOKING SECTION
+    ====================================================== */
+
+    .contact-booking {
+      width: 100%;
+      padding: 90px 20px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .contact-booking .contact-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .contact-booking > .contact-container > p {
+      max-width: 750px;
+      margin: 0 auto 40px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .booking-calendar-wrapper {
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto 0;
+      min-height: 750px;
+      overflow: visible;
+    }
+
+    /* Keep the original working HubSpot embed structure */
+
+    .meetings-iframe-container {
+      display: block;
+      width: 100%;
+      min-height: 750px;
+      margin: 0 auto;
+    }
+
+    .meetings-iframe-container iframe {
+      display: block;
+      width: 100% !important;
+      min-height: 750px;
+      border: none;
+    }
+
+    /* =====================================================
+       SERVICE INQUIRIES
+    ====================================================== */
+
+    .contact-services {
+      background: var(--soft);
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .contact-services .contact-container {
+      max-width: 900px;
+    }
+
+    .contact-services > .contact-container > p {
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .contact-service-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 35px 0;
+      text-align: left;
+    }
+
+    .contact-service-list div {
+      background: var(--white);
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 17px 20px;
+      font-weight: 600;
+    }
+
+    .contact-service-list div::before {
+      content: "✓";
+      color: var(--orange);
+      font-weight: 700;
+      margin-right: 12px;
+    }
+
+    .contact-note {
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 30px auto;
+    }
+
+    /* =====================================================
+       FINAL CTA
+    ====================================================== */
+
+    .contact-final {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 85px 20px;
+    }
+
+    .contact-final .contact-container {
+      max-width: 750px;
+    }
+
+    .contact-final p {
+      line-height: 1.8;
+      margin: 0 auto 30px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* =====================================================
+       RESPONSIVE DESIGN
+    ====================================================== */
+
+    @media (max-width: 800px) {
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin: 0 auto;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .contact-hero {
+        padding: 140px 15px 80px;
+      }
+
+      .contact-information,
+      .contact-services {
+        padding: 65px 20px;
+      }
+
+      .contact-service-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 30px 20px;
+      }
+
+      .contact-booking {
+        padding: 65px 15px;
+      }
+
+      .booking-calendar-wrapper,
+      .meetings-iframe-container {
+        min-height: 850px;
+      }
+
+      .meetings-iframe-container iframe {
+        min-height: 850px;
+      }
+
+      .contact-final {
+        padding: 65px 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="site-header">
+    <div class="container">
+
+      <nav class="nav" aria-label="Primary navigation">
+
+        <a class="brand" href="../index.html" aria-label="Kevin Arevalo">
+          <img src="../assets/favicon-w.png" alt="Kevin Arevalo">
+        </a>
+
+        <a href="../index.html">Home</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../blog.html">Blog</a>
+
+        <div class="nav-dropdown">
+
+          <a href="#" class="nav-dropdown-toggle">Projects</a>
+
+          <div class="dropdown-menu">
+
+            <a href="../blackpoint-it.html" class="project-box blackpoint-it-box">
+              BlackPoint IT
+            </a>
+
+            <a href="../digital-dealer.html" class="project-box digital-dealer-box">
+              Digital Dealer
+            </a>
+
+          </div>
+
+        </div>
+
+        <a href="../resume.html">Resume</a>
+
+        <div class="socials" aria-label="Social links">
+
+          <a
+            href="https://www.linkedin.com/in/kevin-arevalo-44ba21239/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="../assets/LinkedIn_Icon.svg" alt="">
+          </a>
+
+        </div>
+
+        <button
+          class="mobile-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       MAIN CONTENT
+  ====================================================== -->
+
+  <main class="contact-page">
+
+    <!-- CONTACT HERO -->
+
+    <section class="contact-hero">
+
+      <div class="contact-container">
+
+        <span class="contact-label">LET'S CONNECT</span>
+
+        <h1>Let's Talk About Your Marketing Goals</h1>
+
+        <p>
+          Looking for support with your digital marketing?
+          I'd be happy to learn more about your business, your goals,
+          and how I can help you move forward.
+        </p>
+
+        <a
+          class="contact-primary-btn"
+          href="#book"
+        >
+          Book a call!
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- HUBSPOT BOOKING SECTION -->
+
+    <section class="contact-booking">
+
+      <div class="contact-container" id="book">
+
+        <span class="contact-label">
+          LET'S SCHEDULE A CONVERSATION
+        </span>
+
+        <h2>Book a Meeting With Me</h2>
+
+        <p>
+          Have a project in mind or want to discuss your marketing needs?
+          Schedule a meeting at a time that works best for you.
+        </p>
+
+        <div class="booking-calendar-wrapper">
+
+          <!-- Original working HubSpot container -->
+
+          <div
+            class="meetings-iframe-container"
+            data-src="https://meetings-na2.hubspot.com/kevinarevalofreelanceph?embed=true">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT INFORMATION -->
+
+    <section class="contact-information">
+
+      <div class="contact-container">
+
+        <div class="contact-heading">
+
+          <h2>I'd Love to Hear From You</h2>
+
+          <p>
+            Whether you have a project in mind, need marketing assistance,
+            or simply want to explore how we could work together,
+            feel free to reach out.
+          </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+          <article class="contact-card">
+
+            <div class="contact-icon">✉</div>
+
+            <h3>Email</h3>
+
+            <p>
+              For service inquiries, project discussions, and other questions,
+              you can reach me through email.
+            </p>
+
+            <a href="mailto:kevinarevalofreelanceph@gmail.com">
+              kevinarevalofreelanceph@gmail.com
+            </a>
+
+          </article>
+
+          <article class="contact-card">
+
+            <div class="contact-icon">in</div>
+
+            <h3>LinkedIn</h3>
+
+            <p>
+              Connect with me on LinkedIn to learn more about my professional
+              background, experience, and marketing work.
+            </p>
+
+            <a
+              href="https://www.linkedin.com/in/kevin-arevalo-44ba21239/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit My LinkedIn Profile
+            </a>
+
+          </article>
+
+          <article class="contact-card">
+
+            <div class="contact-icon">⌘</div>
+
+            <h3>Website</h3>
+
+            <p>
+              Explore my services, projects, and professional experience
+              to learn more about the marketing support I offer.
+            </p>
+
+            <a href="../index.html">
+              Explore My Website
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SERVICE INQUIRIES -->
+
+    <section class="contact-services">
+
+      <div class="contact-container">
+
+        <span class="contact-label">HOW I CAN HELP</span>
+
+        <h2>What Would You Like Help With?</h2>
+
+        <p>
+          I provide digital marketing support for businesses looking
+          to improve their online presence, connect with their audience,
+          and strengthen their marketing efforts.
+        </p>
+
+        <div class="contact-service-list">
+
+          <div>SEO &amp; Content Marketing</div>
+          <div>Social Media Marketing</div>
+          <div>Email &amp; Lead Generation</div>
+          <div>Graphic Design</div>
+          <div>LinkedIn PPC Advertising</div>
+          <div>Marketing Research</div>
+          <div>Website Management</div>
+
+        </div>
+
+        <p class="contact-note">
+          Not sure which service you need? That's completely fine.
+          Tell me a little about your goals, and we can discuss
+          the right approach for your business.
+        </p>
+
+        <a
+          class="contact-primary-btn"
+          href="mailto:kevinarevalofreelanceph@gmail.com?subject=Service%20Inquiry&amp;body=Hello%20Kevin%2C%0A%0AI'd%20like%20to%20learn%20more%20about%20your%20services.%20Here%20is%20a%20little%20about%20what%20I%20need%3A%0A%0A"
+        >
+          Discuss Your Project
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+
+    <section class="contact-final">
+
+      <div class="contact-container">
+
+        <h2>Have a Project in Mind?</h2>
+
+        <p>
+          Let's start a conversation and explore how practical
+          digital marketing support can help your business.
+        </p>
+
+        <a
+          href="mailto:kevinarevalofreelanceph@gmail.com?subject=Service%20Inquiry"
+          class="contact-primary-btn"
+        >
+          Contact Me Today
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <div class="container">
+      © 2026 kevinarevalo. All rights reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       HUBSPOT MEETINGS EMBED
+       Keep this original working script structure.
+  ====================================================== -->
+
+  <script
+    type="text/javascript"
+    src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js">
+  </script>
+
+</body>
+</html>
